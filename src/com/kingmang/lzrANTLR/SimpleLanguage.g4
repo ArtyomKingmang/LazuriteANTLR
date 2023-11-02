@@ -1,25 +1,28 @@
 grammar SimpleLanguage;
 
-program : statement+;
+program : statement+ ;
 
 statement : funcDeclaration
-          | assigment
+          | assignment
           | printStatement
           | whileStatement
           ;
-funcDeclaration : 'func' INDENTIFIER '('paramList? ')' block;
-paramList : INDENTIFIER (',' INDENTIFIER)*;
 
-assigment : INDENTIFIER '=' expression ';' ;
-printStatement : 'print' '(' expression ')' ';';
-whileStatement : 'while' '(' expression ')' block;
+funcDeclaration : 'func' IDENTIFIER '(' paramList? ')' block ;
 
-block : '{' statement '}';
+paramList : IDENTIFIER (',' IDENTIFIER)* ;
+
+assignment : IDENTIFIER '=' expression ';' ;
+
+printStatement : 'print' '(' expression ')' ';' ;
+
+whileStatement : 'while' '(' expression ')' block ;
+
+block : '{' statement* '}' ;
 
 expression : literal
-           | INDENTIFIER
-           | expression op = ('*' | '/' | '-' | '+')
-expression
+           | IDENTIFIER
+           | expression op=('*' | '/' | '-' | '+') expression
            | '(' expression ')'
            ;
 
@@ -27,8 +30,9 @@ literal : NUMBER
         | STRING
         ;
 
-NUMBER : DIGIT +;
-STRING : '"' ~["]* '"';
-INDENTIFIER : [a-zA-Z] + ;
-WS : [\t\r\n] + -> skip;
-fragment DIGIT : [0-9];
+
+NUMBER : DIGIT+ ;
+STRING : '"' ~["]* '"' ;
+IDENTIFIER : [a-zA-Z]+ ;
+WS : [ \t\r\n]+ -> skip ;
+fragment DIGIT : [0-9] ;

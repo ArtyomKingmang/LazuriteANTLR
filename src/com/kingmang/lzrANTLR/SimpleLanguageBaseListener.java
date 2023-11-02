@@ -1,5 +1,5 @@
 // Generated from C:/Users/crowb/OneDrive/������� ����/Lazurite ANTLR/src/com/kingmang/lzrANTLR/SimpleLanguage.g4 by ANTLR 4.13.1
-package com.kingmang.lzrANTLR.gen.com.kingmang.lzrANTLR;
+package com.kingmang.lzrANTLR;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -65,13 +65,13 @@ public class SimpleLanguageBaseListener implements SimpleLanguageListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssigment(SimpleLanguageParser.AssigmentContext ctx) { }
+	@Override public void enterAssignment(SimpleLanguageParser.AssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssigment(SimpleLanguageParser.AssigmentContext ctx) { }
+	@Override public void exitAssignment(SimpleLanguageParser.AssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -1,5 +1,5 @@
 // Generated from C:/Users/crowb/OneDrive/������� ����/Lazurite ANTLR/src/com/kingmang/lzrANTLR/SimpleLanguage.g4 by ANTLR 4.13.1
-package com.kingmang.lzrANTLR.gen.com.kingmang.lzrANTLR;
+package com.kingmang.lzrANTLR;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -35,11 +35,11 @@ public interface SimpleLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitParamList(SimpleLanguageParser.ParamListContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SimpleLanguageParser#assigment}.
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#assignment}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitAssigment(SimpleLanguageParser.AssigmentContext ctx);
+	T visitAssignment(SimpleLanguageParser.AssignmentContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SimpleLanguageParser#printStatement}.
 	 * @param ctx the parse tree

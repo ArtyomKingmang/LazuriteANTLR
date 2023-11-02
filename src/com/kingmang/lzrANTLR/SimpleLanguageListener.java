@@ -1,5 +1,5 @@
 // Generated from C:/Users/crowb/OneDrive/������� ����/Lazurite ANTLR/src/com/kingmang/lzrANTLR/SimpleLanguage.g4 by ANTLR 4.13.1
-package com.kingmang.lzrANTLR.gen.com.kingmang.lzrANTLR;
+package com.kingmang.lzrANTLR;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -48,15 +48,15 @@ public interface SimpleLanguageListener extends ParseTreeListener {
 	 */
 	void exitParamList(SimpleLanguageParser.ParamListContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SimpleLanguageParser#assigment}.
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#assignment}.
 	 * @param ctx the parse tree
 	 */
-	void enterAssigment(SimpleLanguageParser.AssigmentContext ctx);
+	void enterAssignment(SimpleLanguageParser.AssignmentContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SimpleLanguageParser#assigment}.
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#assignment}.
 	 * @param ctx the parse tree
 	 */
-	void exitAssigment(SimpleLanguageParser.AssigmentContext ctx);
+	void exitAssignment(SimpleLanguageParser.AssignmentContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SimpleLanguageParser#printStatement}.
 	 * @param ctx the parse tree

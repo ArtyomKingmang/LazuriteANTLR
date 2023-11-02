@@ -1,5 +1,5 @@
 // Generated from C:/Users/crowb/OneDrive/������� ����/Lazurite ANTLR/src/com/kingmang/lzrANTLR/SimpleLanguage.g4 by ANTLR 4.13.1
-package com.kingmang.lzrANTLR.gen.com.kingmang.lzrANTLR;
+package com.kingmang.lzrANTLR;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -19,7 +19,7 @@ public class SimpleLanguageLexer extends Lexer {
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, NUMBER=15, STRING=16, 
-		INDENTIFIER=17, WS=18;
+		IDENTIFIER=17, WS=18;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
 	};
@@ -31,7 +31,7 @@ public class SimpleLanguageLexer extends Lexer {
 	private static String[] makeRuleNames() {
 		return new String[] {
 			"T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", "T__7", "T__8", 
-			"T__9", "T__10", "T__11", "T__12", "T__13", "NUMBER", "STRING", "INDENTIFIER", 
+			"T__9", "T__10", "T__11", "T__12", "T__13", "NUMBER", "STRING", "IDENTIFIER", 
 			"WS", "DIGIT"
 		};
 	}
@@ -47,7 +47,7 @@ public class SimpleLanguageLexer extends Lexer {
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, null, null, null, null, null, null, null, null, null, null, null, 
-			null, null, null, "NUMBER", "STRING", "INDENTIFIER", "WS"
+			null, null, null, "NUMBER", "STRING", "IDENTIFIER", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -129,7 +129,7 @@ public class SimpleLanguageLexer extends Lexer {
 		"\u0003\u0002\u0005\u0003\u0007\u0004\t\u0005\u000b\u0006\r\u0007\u000f"+
 		"\b\u0011\t\u0013\n\u0015\u000b\u0017\f\u0019\r\u001b\u000e\u001d\u000f"+
 		"\u001f\u0010!\u0011#\u0012%\u0000\u0001\u0000\u0004\u0001\u0000\"\"\u0002"+
-		"\u0000AZaz\u0002\u0000\t\n\r\r\u0001\u000009l\u0000\u0001\u0001\u0000"+
+		"\u0000AZaz\u0003\u0000\t\n\r\r  \u0001\u000009l\u0000\u0001\u0001\u0000"+
 		"\u0000\u0000\u0000\u0003\u0001\u0000\u0000\u0000\u0000\u0005\u0001\u0000"+
 		"\u0000\u0000\u0000\u0007\u0001\u0000\u0000\u0000\u0000\t\u0001\u0000\u0000"+
 		"\u0000\u0000\u000b\u0001\u0000\u0000\u0000\u0000\r\u0001\u0000\u0000\u0000"+
