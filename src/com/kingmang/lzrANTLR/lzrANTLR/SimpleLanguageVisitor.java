@@ -1,5 +1,7 @@
-// Generated from C:/Users/crowb/OneDrive/������� ����/Lazurite ANTLR/src/com/kingmang/lzrANTLR/SimpleLanguage.g4 by ANTLR 4.13.1
-package com.kingmang.lzrANTLR;
+/*
+@author Artyom Kingmang
+ */
+package com.kingmang.lzrANTLR.lzrANTLR;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -53,6 +55,48 @@ public interface SimpleLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitWhileStatement(SimpleLanguageParser.WhileStatementContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#ifStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIfStatement(SimpleLanguageParser.IfStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#forStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitForStatement(SimpleLanguageParser.ForStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#switchStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSwitchStatement(SimpleLanguageParser.SwitchStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#caseStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCaseStatement(SimpleLanguageParser.CaseStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#defaultStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDefaultStatement(SimpleLanguageParser.DefaultStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#inputStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInputStatement(SimpleLanguageParser.InputStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#conversionStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitConversionStatement(SimpleLanguageParser.ConversionStatementContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SimpleLanguageParser#block}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -70,4 +114,10 @@ public interface SimpleLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitLiteral(SimpleLanguageParser.LiteralContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleLanguageParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitType(SimpleLanguageParser.TypeContext ctx);
 }

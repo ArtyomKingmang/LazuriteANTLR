@@ -1,5 +1,7 @@
-// Generated from C:/Users/crowb/OneDrive/������� ����/Lazurite ANTLR/src/com/kingmang/lzrANTLR/SimpleLanguage.g4 by ANTLR 4.13.1
-package com.kingmang.lzrANTLR;
+/*
+@author Artyom Kingmang
+ */
+package com.kingmang.lzrANTLR.lzrANTLR;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -78,6 +80,76 @@ public interface SimpleLanguageListener extends ParseTreeListener {
 	 */
 	void exitWhileStatement(SimpleLanguageParser.WhileStatementContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterIfStatement(SimpleLanguageParser.IfStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitIfStatement(SimpleLanguageParser.IfStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#forStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterForStatement(SimpleLanguageParser.ForStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#forStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitForStatement(SimpleLanguageParser.ForStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#switchStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterSwitchStatement(SimpleLanguageParser.SwitchStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#switchStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitSwitchStatement(SimpleLanguageParser.SwitchStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#caseStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterCaseStatement(SimpleLanguageParser.CaseStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#caseStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitCaseStatement(SimpleLanguageParser.CaseStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#defaultStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterDefaultStatement(SimpleLanguageParser.DefaultStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#defaultStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitDefaultStatement(SimpleLanguageParser.DefaultStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#inputStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterInputStatement(SimpleLanguageParser.InputStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#inputStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitInputStatement(SimpleLanguageParser.InputStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#conversionStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterConversionStatement(SimpleLanguageParser.ConversionStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#conversionStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitConversionStatement(SimpleLanguageParser.ConversionStatementContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SimpleLanguageParser#block}.
 	 * @param ctx the parse tree
 	 */
@@ -107,4 +179,14 @@ public interface SimpleLanguageListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitLiteral(SimpleLanguageParser.LiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleLanguageParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterType(SimpleLanguageParser.TypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleLanguageParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitType(SimpleLanguageParser.TypeContext ctx);
 }
