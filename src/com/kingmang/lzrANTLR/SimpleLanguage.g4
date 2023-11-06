@@ -25,7 +25,7 @@ whileStatement : 'while' '(' expression ')' block ;
 
 ifStatement : 'if' '(' expression ')' block ( 'else' block )?;
 
-forStatement: 'for' '(' assignment ',' expression ',' assignment ')' block ;
+forStatement: 'for' '(' assignment ';' expression ';' assignment ')' block ;
 
 switchStatement : 'switch' '(' expression ')' '{' caseStatement* defaultStatement? '}' ;
 
@@ -40,9 +40,10 @@ conversionStatement : type '(' expression ')' ;
 block : '{' statement* '}' ;
 
 expression : literal
-           | IDENTIFIER
-           | expression op=('*' | '/' | '-' | '+') expression
+           | expression op=('*' | '/') expression
+           | expression op=('+' | '-') expression
            | '(' expression ')'
+           | IDENTIFIER
            ;
 
 literal : NUMBER
