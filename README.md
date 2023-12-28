@@ -1,7 +1,7 @@
-#About
+# About
 implementation of the Lazurite programming language on ANTLR.
 
-#Examples
+# Examples
 Hello World:
 ```shell
 print("Hello World!");
